@@ -21,19 +21,16 @@
 
         @forelse ($movies as $movie)
             <div class="col-3">
-                <h3>{{ $movie-> }}</h3>
-                <p>{{ $movie-> }}</p>
+                <h3>{{ $movie->title }}</h3>
+                <p>{{ $movie->original_title }}</p>
                 <span>
-                    Numero di pagine: {{ $movie-> }}
+                 {{ $movie->nationality }}
                 </span>
             </div>
         @empty
 
         @endforelse
 
-        <div class="col-12">
-
-        </div>
     </div>
 
 </div>
