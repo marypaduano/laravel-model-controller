@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers\Guest;
 
-use App\Models\Movie;
-
 use App\Http\Controllers\Controller;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -18,5 +17,5 @@ class PageController extends Controller
         ];
 
         return view('welcome', $data);
-}
+    }
 }
